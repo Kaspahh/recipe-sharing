@@ -165,6 +165,25 @@
             gap: 5px;
         }
 
+        .difficulty-easy {
+            color: #48bb78;
+            font-weight: 600;
+        }
+
+        .difficulty-medium {
+            color: #ed8936;
+            font-weight: 600;
+        }
+
+        .difficulty-hard {
+            color: #f56565;
+            font-weight: 600;
+        }
+
+        .difficulty-easy, .difficulty-medium, .difficulty-hard {
+            display: inline;
+        }
+
         .recipe-ingredients {
             margin-bottom: 15px;
         }
@@ -197,24 +216,6 @@
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-
-        .difficulty-easy {
-    color: green; /* For Easy/Low Difficulty */
-    font-weight: 600;
-}
-
-        .difficulty-medium {
-    color: orange; /* Yellow/Amber is often difficult to read, so 'orange' is a better choice */
-    font-weight: 600;
-}
-
-        .difficulty-hard {
-    color: red; /* For Hard/High Difficulty */
-    font-weight: 600; 
-}
-        .difficulty-easy, .difficulty-medium, .difficulty-hard {
-            display: inline;
-}
     </style>
 </head>
 <body>
@@ -233,7 +234,6 @@
                 <div class="recipe-meta">
                     <span>⏱️ Prep: 15 minutes</span>
                     <span>🔥 Cook: 30 minutes</span>
-                    <span>😓 Difficulty: <span class="difficulty-medium">Medium</span></span>
                 </div>
                 <div class="recipe-ingredients">
                     <h4>Ingredients:</h4>
@@ -241,7 +241,7 @@
                         <li>Basmati rice, butter, water, salt</li>
                         <li>Ginger Ninja spice blend (or substitute: 1 tsp turmeric + 1 tsp ground ginger + ½ tsp cumin)</li>
                         <li>Garlic (pressed or finely chopped)</li>
-                        <li>Onions (diced or sliced whatever you prefer)</li>
+                        <li>Spring onions (cut into 3 cm pieces)</li>
                         <li>Carrot (unpeeled, diced into 1 cm cubes)</li>
                         <li>Cucumber (diced into 1 cm cubes)</li>
                         <li>Pork (cut into 3 cm strips)</li>
@@ -251,7 +251,7 @@
                         <li>Tomato purée</li>
                         <li>Mild Mahal spice blend (or substitute: 1-2 tbsp mild curry powder or garam masala)</li>
                         <li>Wheat flour (about 1 tbsp)</li>
-                        <li>Chicken stock bouillon powder and water</li>
+                        <li>Bouillon and water</li>
                     </ul>
                 </div>
                 <div class="recipe-instructions">
@@ -260,7 +260,7 @@
                     <p><strong>2. Prep ingredients:</strong> Press or finely chop garlic. Cut spring onions into 3 cm pieces. Dice carrot (unpeeled) and cucumber into 1 cm cubes. Cut pork into 3 cm strips on a separate cutting board.</p>
                     <p><strong>3. Cook meat:</strong> Heat olive oil in a large frying pan over medium-high heat. Cook pork with salt and a pinch of pepper for 3-4 min until cooked through, then transfer to a bowl. (Pork is done when no pink remains.)</p>
                     <p><strong>4. Make cucumber dressing:</strong> Meanwhile, mix cucumber, half the crème fraiche, and a pinch of salt and pepper in a small bowl.</p>
-                    <p><strong>5. Make pork curry:</strong> Heat a little olive oil in the same pan (wipe clean first) over medium-high heat. Cook carrot and onions for 4-5 min until soft. Add tomato purée, garlic, curry spice blend, and flour, cook for 1-2 min. Add bouillon and water, simmer for 2-3 min. Reduce to medium heat and stir in remaining crème fraiche. Add pork back in and season with salt and pepper.</p>
+                    <p><strong>5. Make pork curry:</strong> Heat a little olive oil in the same pan (wipe clean first) over medium-high heat. Cook carrot and spring onions for 4-5 min until soft. Add tomato purée, garlic, Mild Mahal spice blend, and flour, cook for 1-2 min. Add bouillon and water, simmer for 2-3 min. Reduce to medium heat and stir in remaining crème fraiche. Add pork back in and season with salt and pepper.</p>
                     <p><strong>6. Serve:</strong> Arrange rice and pork curry in deep plates. Top with cucumber dressing.</p>
                 </div>
                 </div>
@@ -280,6 +280,7 @@
                     <div class="recipe-meta">
                         <span>⏱️ Prep: 15 minutes</span>
                         <span>🔥 Cook: 30 minutes</span>
+                        <span>😓 Difficulty: <span class="difficulty-medium">Medium</span></span>
                     </div>
                     <div class="recipe-ingredients">
                         <h4>Ingredients:</h4>
