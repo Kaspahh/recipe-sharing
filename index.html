@@ -152,13 +152,14 @@
 
         .recipe-meta {
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 15px;
             color: #718096;
             font-size: 0.9em;
         }
 
-        .recipe-meta span:not(.difficulty-green):not(.difficulty-yellow):not(.difficulty-red) {
+        .recipe-meta > span {
             display: flex;
             align-items: center;
             gap: 5px;
@@ -197,22 +198,22 @@
             margin-bottom: 10px;
         }
 
-        .difficulty-green {
+        .difficulty-easy {
     color: green; /* For Easy/Low Difficulty */
-    font-weight: bold;
-    display: inline;
+    font-weight: 600;
 }
 
-        .difficulty-yellow {
+        .difficulty-medium {
     color: orange; /* Yellow/Amber is often difficult to read, so 'orange' is a better choice */
-    font-weight: bold;
-    display: inline;
+    font-weight: 600;
 }
 
-        .difficulty-red {
+        .difficulty-hard {
     color: red; /* For Hard/High Difficulty */
-    font-weight: bold;
-    display: inline;    
+    font-weight: 600; 
+}
+        .difficulty-easy, .difficulty-medium, .difficulty-hard {
+            display: inline;
 }
     </style>
 </head>
@@ -232,7 +233,7 @@
                 <div class="recipe-meta">
                     <span>⏱️ Prep: 15 minutes</span>
                     <span>🔥 Cook: 30 minutes</span>
-                    <span>😓 Difficulty: </span><span class="difficulty-yellow">Medium</span>
+                    <span>😓 Difficulty: <span class="difficulty-medium">Medium</span></span>
                 </div>
                 <div class="recipe-ingredients">
                     <h4>Ingredients:</h4>
